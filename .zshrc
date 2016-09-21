@@ -71,6 +71,7 @@ plugins=(git gitfast git-extras brew)
 # User configuration
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/stingley/git/modula/Cogito/Toolset/Modula/BUILD/bin"
+export HOMEBREW_GITHUB_API_TOKEN=5154092526ae7630735d53fa11e18af0ec71c16a
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # JDK Directory
