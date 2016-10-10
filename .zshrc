@@ -70,7 +70,7 @@ plugins=(git gitfast git-extras brew)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export HOMEBREW_GITHUB_API_TOKEN=5154092526ae7630735d53fa11e18af0ec71c16a
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -95,11 +95,11 @@ alias .....="cd ../../../.."
 # Directories
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/git/puppet"
+# alias p="cd ~/git/puppet"
 
 # Commands
 alias g="git"
-alias mtr="/usr/local/Cellar/mtr/0.86/sbin/mtr"
+# alias mtr="/usr/local/Cellar/mtr/0.86/sbin/mtr"
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; sudo gem update --system; sudo gem update'
 # Flush DNS
 alias flushdns="killall -HUP mDNSResponder"
@@ -118,4 +118,4 @@ alias sudo='sudo '
 
 source $ZSH/oh-my-zsh.sh
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
