@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/stingley/.oh-my-zsh
+export ZSH=/Users/scott/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -70,22 +70,21 @@ plugins=(git gitfast git-extras brew)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/stingley/git/modula/Cogito/Toolset/Modula/BUILD/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 export HOMEBREW_GITHUB_API_TOKEN=5154092526ae7630735d53fa11e18af0ec71c16a
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # JDK Directory
-export JAVA_HOME="/usr/libexec/java_home"
+# export JAVA_HOME="/usr/libexec/java_home"
 
 # Vagrant
-unset PUPPET_DEBUG
-export PUPPET_DIR="/Users/stingley/git/puppet"
-export AWS_DISABLE_IAM=true
-export AWS_ACCESS_KEY="AKIAJKL2YHB7JIVUNLZA"
-alias vd="/usr/local/bin/vagrant destroy"
-alias vu="/usr/local/bin/vagrant up"
-alias vp="/usr/local/bin/vagrant provision"
-alias vs="/usr/local/bin/vagrant ssh"
+# unset PUPPET_DEBUG
+# export PUPPET_DIR="/Users/stingley/git/puppet"
+# export AWS_DISABLE_IAM=true
+# alias vd="/usr/local/bin/vagrant destroy"
+# alias vu="/usr/local/bin/vagrant up"
+# alias vp="/usr/local/bin/vagrant provision"
+# alias vs="/usr/local/bin/vagrant ssh"
 
 # Navigation
 alias ..="cd .."
