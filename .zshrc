@@ -81,10 +81,10 @@ export HOMEBREW_GITHUB_API_TOKEN=5154092526ae7630735d53fa11e18af0ec71c16a
 # unset PUPPET_DEBUG
 # export PUPPET_DIR="/Users/stingley/git/puppet"
 # export AWS_DISABLE_IAM=true
-# alias vd="/usr/local/bin/vagrant destroy"
-# alias vu="/usr/local/bin/vagrant up"
-# alias vp="/usr/local/bin/vagrant provision"
-# alias vs="/usr/local/bin/vagrant ssh"
+alias vd="/usr/local/bin/vagrant destroy"
+alias vu="/usr/local/bin/vagrant up"
+alias vp="/usr/local/bin/vagrant provision"
+alias vs="/usr/local/bin/vagrant ssh"
 
 # Navigation
 alias ..="cd .."
