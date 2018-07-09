@@ -42,9 +42,6 @@
         # List aliases
         la = "!git config -l | grep alias | cut -c 7-"
 	
-        create-pull-request = !sh -c 'stash pull-request $0 $@'
-        pr = !sh -c 'stash pull-request $0 $@' master @kclaxton @lreed @dmm @jcarter @scg @ggoddard @cmattes
-        
         remotes = remote -v
 [core]
 	editor = mate -w
