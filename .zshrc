@@ -1,4 +1,4 @@
-export ZSH=/Users/scott/.oh-my-zsh
+export ZSH=/Users/stingley/.oh-my-zsh
 ZSH_THEME="sunaku"
 
 # Uncomment the following line to enable command auto-correction.
@@ -11,7 +11,19 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git gitfast git-extras brew)
 
 # User configuration
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+
+# JDK Directory
+export JAVA_HOME="/usr/libexec/java_home"
+
+# Vagrant
+unset PUPPET_DEBUG
+export PUPPET_DIR="/Users/stingley/git/puppet"
+export AWS_DISABLE_IAM=true
+alias vd="/usr/local/bin/vagrant destroy"
+alias vu="/usr/local/bin/vagrant up"
+alias vp="/usr/local/bin/vagrant provision"
+alias vs="/usr/local/bin/vagrant ssh"
 
 # Navigation
 alias ..="cd .."
@@ -21,10 +33,11 @@ alias ....="cd ../../.."
 # Directories
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
+alias p="cd ~/git/puppet"
 
 ### Commands
 alias g="git"
-# alias mtr="/usr/local/Cellar/mtr/0.86/sbin/mtr"
+# alias mtr="/usr/local/Cellar/mtr/0.92/sbin/mtr"
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; sudo gem update --system; sudo gem update'
 # Flush DNS
 alias flushdns="killall -HUP mDNSResponder"
@@ -41,3 +54,4 @@ alias sudo='sudo '
 
 source $ZSH/oh-my-zsh.sh
 
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
