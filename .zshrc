@@ -1,9 +1,6 @@
 export ZSH=/Users/scott/.oh-my-zsh
 ZSH_THEME="sunaku"
 
-# Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
-
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
 
@@ -12,20 +9,6 @@ plugins=(git gitfast git-extras brew)
 
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-export HOMEBREW_GITHUB_API_TOKEN=5154092526ae7630735d53fa11e18af0ec71c16a
-
-# JDK Directory
-# export JAVA_HOME="/usr/libexec/java_home"
-
-# Navigation
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
-
-# Directories
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
 
 # Commands
 alias g="git"
