@@ -2,7 +2,7 @@ export ZSH=/Users/stingley/.oh-my-zsh
 ZSH_THEME="sunaku"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -11,10 +11,10 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git gitfast git-extras brew)
 
 # User configuration
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 
 # JDK Directory
-export JAVA_HOME="/usr/libexec/java_home"
+export JAVA_HOME="/Library/Java/Home"
 
 # Vagrant
 unset PUPPET_DEBUG
@@ -24,16 +24,6 @@ alias vd="/usr/local/bin/vagrant destroy"
 alias vu="/usr/local/bin/vagrant up"
 alias vp="/usr/local/bin/vagrant provision"
 alias vs="/usr/local/bin/vagrant ssh"
-
-# Navigation
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-
-# Directories
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-alias p="cd ~/git/puppet"
 
 ### Commands
 alias g="git"
@@ -48,6 +38,14 @@ alias egrep='egrep --color=auto'
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
+
+# Okta AWS Assume Role
+function aws {
+    withokta "aws --profile $1" $@
+}
+function sls {
+    withokta "sls --stage $1" $@
+}
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
