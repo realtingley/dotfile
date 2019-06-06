@@ -11,10 +11,13 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git gitfast git-extras brew)
 
 # User configuration
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH="/Users/stingley/.okta/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 
 # JDK Directory
 export JAVA_HOME="/Library/Java/Home"
+
+# Groovy Directory
+export GROOVY_HOME="/usr/local/opt/groovy/libexec"
 
 # Vagrant
 unset PUPPET_DEBUG
@@ -39,17 +42,17 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
 
-# Okta AWS Assume Role
-function aws {
-    withokta "aws --profile $1" $@
-}
-function sls {
-    withokta "sls --stage $1" $@
-}
-
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
 source $ZSH/oh-my-zsh.sh
+
+#OktaAWSCLI
+if [[ -f "$HOME/.okta/bash_functions" ]]; then
+    . "$HOME/.okta/bash_functions"
+fi
+if [[ -d "$HOME/.okta/bin" && ":$PATH:" != *":$HOME/.okta/bin:"* ]]; then
+    PATH="$HOME/.okta/bin:$PATH"
+fi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
