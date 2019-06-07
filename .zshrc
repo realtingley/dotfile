@@ -8,22 +8,22 @@ ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(git gitfast git-extras brew)
+plugins=(git gitfast git-extras)
 
 # User configuration
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # JDK Directory
-export JAVA_HOME="/usr/libexec/java_home"
+# export JAVA_HOME="/usr/libexec/java_home"
 
 # Vagrant
-unset PUPPET_DEBUG
-export PUPPET_DIR="/Users/stingley/git/puppet"
-export AWS_DISABLE_IAM=true
-alias vd="/usr/local/bin/vagrant destroy"
-alias vu="/usr/local/bin/vagrant up"
-alias vp="/usr/local/bin/vagrant provision"
-alias vs="/usr/local/bin/vagrant ssh"
+# unset PUPPET_DEBUG
+# export PUPPET_DIR="/Users/stingley/git/puppet"
+# export AWS_DISABLE_IAM=true
+# alias vd="/usr/local/bin/vagrant destroy"
+# alias vu="/usr/local/bin/vagrant up"
+# alias vp="/usr/local/bin/vagrant provision"
+# alias vs="/usr/local/bin/vagrant ssh"
 
 # Navigation
 alias ..="cd .."
@@ -33,7 +33,6 @@ alias ....="cd ../../.."
 # Directories
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/git/puppet"
 
 ### Commands
 alias g="git"
@@ -54,4 +53,4 @@ alias sudo='sudo '
 
 source $ZSH/oh-my-zsh.sh
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
