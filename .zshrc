@@ -2,7 +2,7 @@ export ZSH=/Users/stingley/.oh-my-zsh
 ZSH_THEME="sunaku"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -25,6 +25,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # alias vp="/usr/local/bin/vagrant provision"
 # alias vs="/usr/local/bin/vagrant ssh"
 
+<<<<<<< HEAD
 # Navigation
 alias ..="cd .."
 alias ...="cd ../.."
@@ -34,6 +35,8 @@ alias ....="cd ../../.."
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 
+=======
+>>>>>>> bd0fb06c46271de48a8d17de204577f19c55df88
 ### Commands
 alias g="git"
 # alias mtr="/usr/local/Cellar/mtr/0.92/sbin/mtr"
@@ -53,4 +56,16 @@ alias sudo='sudo '
 
 source $ZSH/oh-my-zsh.sh
 
+<<<<<<< HEAD
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+=======
+#OktaAWSCLI
+if [[ -f "$HOME/.okta/bash_functions" ]]; then
+    . "$HOME/.okta/bash_functions"
+fi
+if [[ -d "$HOME/.okta/bin" && ":$PATH:" != *":$HOME/.okta/bin:"* ]]; then
+    PATH="$HOME/.okta/bin:$PATH"
+fi
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+>>>>>>> bd0fb06c46271de48a8d17de204577f19c55df88
